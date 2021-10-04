@@ -13,10 +13,10 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   displayName: 'vnet deploy'
   inputs:
-    azureResourceManagerConnection: 'azure connection'
+    azureResourceManagerConnection: 'az connection'
     subscriptionId: 'dbd68380-ce63-4235-8632-ddf2852afc17'
     resourceGroupName: vmrg
-    location: 'West US'
+    location: 'East US'
     csmFile: template.json
     csmParametersFile: parameter.json
 
